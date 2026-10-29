@@ -41,7 +41,7 @@ const Card = () => {
                         </div>
                         <span className="trail" />
                     </div>
-                    <span className="logo-bottom-text">{quotes}</span>
+                    <span  className="logo-bottom-text">{quotes}</span>
                 </div>
                 <span className="bottom-text">Tap or Hover for Quote</span>
             </div>
@@ -63,8 +63,9 @@ const StyledWrapper = styled.div`
 
   .card {
     width: 85vw;
-    max-width: 650px;
-    height: 280px;
+    max-width: 750px;
+    min-height: 320px;
+    max-height: 500px;
     background: #1a1a22;
     position: relative;
     display: flex;
@@ -80,6 +81,7 @@ const StyledWrapper = styled.div`
     font-size: 32px;
     line-height: 45px;
     display: block;
+    margin-bottom: 100px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   }
 
@@ -109,6 +111,7 @@ const StyledWrapper = styled.div`
     opacity: 1;
     letter-spacing: 4px;
     transition: all 0.5s ease-in-out;
+    margin-top:50px;
   }
 
   .content {
@@ -203,6 +206,12 @@ const StyledWrapper = styled.div`
   .card:hover .trail,
   .card.active .trail {
     animation: trail 1s ease-in-out;
+  }
+
+  .logo-bottom-text{
+    margin-top:80px;
+    margin-bottom:50px;
+    max-height: 80px;
   }
 
   @keyframes opacity {
